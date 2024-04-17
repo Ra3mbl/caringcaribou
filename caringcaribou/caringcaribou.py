@@ -10,7 +10,7 @@ import traceback
 import pkg_resources
 
 
-VERSION = "0.6"
+VERSION = "0.7"
 
 
 def show_script_header():
