@@ -1,12 +1,8 @@
 from __future__ import print_function
-from sys import stdout, version_info
+from sys import stdout
 import caringcaribou.utils.constants as constants
 import can
 import time
-
-# Handle large ranges efficiently in both python 2 and 3
-if version_info[0] == 2:
-    range = xrange
 
 
 MESSAGE_DELAY = 0.1

@@ -7,16 +7,13 @@ from doipclient import DoIPClient
 from doipclient.connectors import DoIPClientUDSConnector
 from udsoncan.client import Client
 from udsoncan.services import *
-from sys import stdout, version_info
+from sys import stdout
 import argparse
 import datetime
 import time
 import sys
 import struct
 
-# Handle large ranges efficiently in both python 2 and 3
-if version_info[0] == 2:
-    range = xrange
 
 UDS_SERVICE_NAMES = {
     0x10: "DIAGNOSTIC_SESSION_CONTROL",

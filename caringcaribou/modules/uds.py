@@ -5,14 +5,11 @@ from caringcaribou.utils.constants import ARBITRATION_ID_MAX, ARBITRATION_ID_MAX
 from caringcaribou.utils.constants import ARBITRATION_ID_MIN
 from caringcaribou.utils.iso15765_2 import IsoTp
 from caringcaribou.utils.iso14229_1 import Constants, Iso14229_1, NegativeResponseCodes, Services, ServiceID
-from sys import stdout, version_info, stderr
+from sys import stdout, stderr
 import argparse
 import datetime
 import time
 
-# Handle large ranges efficiently in both python 2 and 3
-if version_info[0] == 2:
-    range = xrange
 
 UDS_SERVICE_NAMES = {
     0x10: "DIAGNOSTIC_SESSION_CONTROL",

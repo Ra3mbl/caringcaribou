@@ -1,5 +1,5 @@
 from __future__ import print_function
-from sys import version_info, stdout
+from sys import stdout
 import argparse
 import random
 from itertools import product
@@ -8,11 +8,6 @@ from caringcaribou.utils.common import hex_str_to_nibble_list, int_from_byte_lis
 from caringcaribou.utils.constants import ARBITRATION_ID_MAX, ARBITRATION_ID_MIN, BYTE_MAX, BYTE_MIN
 from time import sleep
 
-
-# Python 2/3 compatibility
-if version_info[0] == 2:
-    range = xrange
-    input = raw_input
 
 # Number of seconds to wait between messages
 DELAY_BETWEEN_MESSAGES = 0.01
